@@ -1,12 +1,15 @@
-# Luke's build of st - the simple (suckless) terminal
+# Myst - the simple (suckless) terminal (Fork of [Luke's St](https://github.com/LukeSmithxyz/st))
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
+
+![imgmyst](http://0x0.st/-5YM.png)
 
 ## Unique features (using dmenu)
 
 + **follow urls** by pressing `alt-l`
 + **copy urls** in the same way with `alt-y`
 + **copy the output of commands** with `alt-o`
++ **opens new terminal inside dir** with alt-return
 
 ## Bindings for
 
@@ -28,16 +31,16 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 + Scrollback
 + font2
 + updated to latest version 0.8.2
++ dynamic cursor color (cursor color changes to context)
++ new term (press Alt + Return to open new st inside current path)
 
 ## Installation for newbs
 
 ```
-git clone https://github.com/LukeSmithxyz/st
+git clone git@github.com:void00r/myst.git
 cd st
 sudo make install
 ```
-
-Users of Arch-based distros can also install it from the AUR as [st-luke-git](https://aur.archlinux.org/packages/st-luke-git/).
 
 Obviously, `make` is required to build. `fontconfig` is required for the default build, since it asks `fontconfig` for your system monospace font.  It might be obvious, but `libX11` and `libXft` are required as well. Chances are, you have all of this installed already.
 
@@ -78,5 +81,5 @@ Note that some special characters may appear truncated if too wide. You might wa
 
 ## Contact
 
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
+- void00r <void00r@tutanota.io>
+- [https://void00r.github.io](https://void00r.github.io)
